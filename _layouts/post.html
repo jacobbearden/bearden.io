@@ -1,0 +1,9 @@
+---
+layout: main
+---
+<div class="content">
+  <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>{% if page.summary %}, {{ page.summary }}{% endif %}
+  {{ page.date | date: '%B %d, %Y' }}
+
+  {{ content }}
+</div>

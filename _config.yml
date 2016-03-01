@@ -1,0 +1,22 @@
+# config
+title: Jacob Bearden
+description: Developer, Designer
+
+permalink: /blog/:year/:month/:day/:title
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+sass:
+  style:    compressed
+  sass_dir: _lib/sass
+  css_dir:  public/css
+
+include: [
+  '_pages'
+]
+exclude: [
+  'README.md',
+]
