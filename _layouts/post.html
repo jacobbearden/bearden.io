@@ -2,7 +2,10 @@
 layout: main
 ---
 <div class="content">
-  <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>{% if page.summary %}, {{ page.summary }}{% endif %}
+  <h4>
+    <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
+    {% if page.summary %}<small>{{ page.summary }}</small>{% endif %}
+  </h4>
   {{ page.date | date: '%B %d, %Y' }}
 
   {{ content }}

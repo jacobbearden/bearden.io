@@ -1,22 +1,25 @@
 # config
 title: Jacob Bearden
 description: Developer, Designer
+url: http://bearden.io
 
 permalink: /blog/:year/:month/:day/:title
+
+sass:
+  style:    compressed
+  sass_dir: /_lib/sass
+  css_dir:  /public/css
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-sass:
-  style:    compressed
-  sass_dir: _lib/sass
-  css_dir:  public/css
-
 include: [
   '_pages'
 ]
 exclude: [
+  'commit-hook.sh',
   'README.md',
+  'LICENSE'
 ]
