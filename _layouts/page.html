@@ -1,17 +1,14 @@
 ---
 layout: main
 ---
-<h2>bearden&middot;io</h2>
-<div class="content">
-  <h4>
+<header class="header">
+  <div class="header-icon"></div>
+  <h2 class="header-title">
     {{ site.title }}
     <small>{{ site.description }}</small>
-  </h4>
+  </h2>
+</header>
 
-  <h4>
-    {{ page.title }}
-    {% if page.summary %}<small>{{ page.summary }}</small>}{% endif %}
-  </h4>
-
+<main class="page">
   {{ content }}
-</div>
+</main>

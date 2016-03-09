@@ -1,0 +1,60 @@
+.container {
+  max-width: 864px;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 80px 0 65px 0;
+}
+.header-icon {
+  background-color: $blue;
+  border-radius: 50%;
+  height: 50px;
+  text-align: center;
+  width: 50px;
+
+  a {
+    border-radius: inherit;
+    color: $white;
+    display: block;
+    font-size: 28px;
+    height: inherit;
+    line-height: 50px;
+    width: inherit;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.header-title {
+  margin: 20px 0;
+
+  span {
+    color: $blue;
+  }
+
+  small {
+    color: $grey;
+    display: block;
+    font-size: 65%;
+    margin: 10px 0;
+  }
+}
+
+.section {
+  padding: 0 0 65px 0;
+}
+
+.post {
+  padding: 0 0 65px 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  color: $grey;
+  padding: 20px 0;
+}

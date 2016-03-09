@@ -1,12 +1,16 @@
 ---
 layout: main
 ---
-<div class="content">
-  <h4>
-    <a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a>
-    {% if page.summary %}<small>{{ page.summary }}</small>{% endif %}
-  </h4>
-  {{ page.date | date: '%B %d, %Y' }}
+<header class="header">
+  <div class="header-icon">
+    <a href="/" title="Back">↩</a>
+  </div>
+  <h2 class="header-title">
+    {{ page.title }}
+    <small>{{ page.date | date: '%B %d, %Y' }}</small>
+  </h2>
+</header>
 
+<article class="post">
   {{ content }}
-</div>
+</article>
