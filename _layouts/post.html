@@ -2,12 +2,22 @@
 layout: main
 ---
 <header class="header">
-  <div class="header-icon">
-    <a href="/" title="Back">↩</a>
+  <div class="clearfix">
+    <div class="header-icon float-left"></div>
+
+    <nav class="nav nav-inline float-right">
+      {% assign pages = site.pages | sort:"url" %}
+      {% for p in pages %}
+        {% if p.in-nav == true %}
+          <a class="nav-link {% if p.url == '/blog/' %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </nav>
   </div>
+
   <h2 class="header-title">
     {{ page.title }}
-    <small>{{ page.date | date: '%B %d, %Y' }}</small>
+    <small class="header-subtitle">{{ page.date | date: '%B %d, %Y' }}</small>
   </h2>
 </header>
 

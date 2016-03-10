@@ -2,10 +2,22 @@
 layout: main
 ---
 <header class="header">
-  <div class="header-icon"></div>
+  <div class="clearfix">
+    <div class="header-icon float-left"></div>
+
+    <nav class="nav nav-inline float-right">
+      {% assign pages = site.pages | sort:"url" %}
+      {% for p in pages %}
+        {% if p.in-nav == true %}
+          <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+
   <h2 class="header-title">
     {{ site.title }}
-    <small>{{ site.description }}</small>
+    <small class="header-subtitle">{{ site.description }}</small>
   </h2>
 </header>
 

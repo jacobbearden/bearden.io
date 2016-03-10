@@ -3,12 +3,24 @@ title: Jacob Bearden
 description: Developer, Designer
 url: http://bearden.io
 
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      type: "posts"
+    values:
+      layout: "post"
+
+compress_html:
+  clippings: all
 
 sass:
   style:    compressed
   sass_dir: /_lib/sass
-  css_dir:  /public/css
 
 markdown: kramdown
 kramdown:
@@ -19,7 +31,8 @@ include: [
   '_pages'
 ]
 exclude: [
-  'commit-hook.sh',
   'README.md',
-  'LICENSE'
+  'LICENSE',
+  'Gemfile',
+  'commit-hook.sh'
 ]

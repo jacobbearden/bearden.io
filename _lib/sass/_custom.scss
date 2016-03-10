@@ -1,5 +1,5 @@
 .container {
-  max-width: 864px;
+  max-width: 750px;
   padding: 0 20px;
 }
 
@@ -9,23 +9,12 @@
 .header-icon {
   background-color: $blue;
   border-radius: 50%;
+  color: $white;
+  font-size: 28px;
   height: 50px;
+  line-height: 50px;
   text-align: center;
   width: 50px;
-
-  a {
-    border-radius: inherit;
-    color: $white;
-    display: block;
-    font-size: 28px;
-    height: inherit;
-    line-height: 50px;
-    width: inherit;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
 }
 .header-title {
   margin: 20px 0;
@@ -33,25 +22,24 @@
   span {
     color: $blue;
   }
-
-  small {
-    color: $grey;
-    display: block;
-    font-size: 65%;
-    margin: 10px 0;
-  }
+}
+.header-subtitle {
+  color: $grey;
+  display: block;
+  font-size: 65%;
+  margin: 10px 0;
 }
 
-.section {
-  padding: 0 0 65px 0;
+.nav {
+  height: 50px;
+  line-height: 50px;
+}
+.nav-link {
+  line-height: 24px;
 }
 
-.post {
+.page, .post {
   padding: 0 0 65px 0;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .highlight code {
