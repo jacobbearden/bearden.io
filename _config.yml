@@ -3,6 +3,9 @@ title: Jacob Bearden
 description: Developer, Designer
 url: http://bearden.io
 
+gems:
+  - jekyll-sitemap
+
 permalink: /blog/:title/
 
 defaults:
@@ -33,6 +36,5 @@ include: [
 exclude: [
   'README.md',
   'LICENSE',
-  'Gemfile',
   'commit-hook.sh'
 ]
