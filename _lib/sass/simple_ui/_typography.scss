@@ -29,7 +29,7 @@ a {
 
   &:hover,
   &:focus {
-    color: darken($blue, 15%);
+    color: darken($blue, 10%);
     text-decoration: underline;
   }
 }
@@ -175,10 +175,4 @@ pre {
 
   background-color: $grey-lightest;
   border-left: $border;
-}
-
-img {
-  max-width: 100%;
-
-  vertical-align: middle;
 }

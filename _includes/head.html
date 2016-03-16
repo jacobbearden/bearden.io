@@ -1,35 +1,28 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-    <meta name="author" content="{{ site.title }}">
-    <meta name="description" content="{{ site.description }}">
+<meta name="author" content="{{ site.title }}">
+<meta name="description" content="{{ site.description }}">
 
-    <title>{{ page.title }} • {{ site.title }}</title>
-    <link rel="icon" href="/favicon.ico">
-    <meta name="theme-color" content="#3333cc">
+<title>{{ page.title }} &bull; {{ site.title }}</title>
+<link rel="icon" href="/favicon.ico">
+<meta name="theme-color" content="#fff">
 
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/rss.xml">
+<style>
+  {% capture include_to_scssify %}
+    {% include main.scss %}
+  {% endcapture %}
+  {{ include_to_scssify | scssify }}
+</style>
+<link rel="stylesheet" href="https://cdn.rawgit.com/fortawesome/font-awesome/v4.5.0/css/font-awesome.min.css">
 
-    <style>
-      {% capture include_to_scssify %}
-        {% include main.scss %}
-      {% endcapture %}
-      {{ include_to_scssify | scssify }}
-    </style>
+<script>
+  !function(j,a,c,o,b){j.GoogleAnalyticsObject=c;j[c]||(j[c]=function(){
+  (j[c].q=j[c].q||[]).push(arguments)});j[c].l=+new Date;o=a.createElement('script');
+  b=a.scripts[0];o.src='//www.google-analytics.com/analytics.js';
+  b.parentNode.insertBefore(o,b)}(window,document,'ga');
 
-    <script>
-      !function(j,a,c,o,b){j.GoogleAnalyticsObject=c;j[c]||(j[c]=function(){
-      (j[c].q=j[c].q||[]).push(arguments)});j[c].l=+new Date;o=a.createElement('script');
-      b=a.scripts[0];o.src='//www.google-analytics.com/analytics.js';
-      b.parentNode.insertBefore(o,b)}(window,document,'ga');
-
-      ga('create', 'UA-56388104-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <div class="container">
+  ga('create', 'UA-56388104-2', 'auto');
+  ga('send', 'pageview');
+</script>

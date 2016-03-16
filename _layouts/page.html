@@ -1,26 +1,43 @@
 ---
-layout: main
+layout: compress
 ---
-<header class="header">
-  <div class="clearfix">
-    <div class="header-icon float-left"></div>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {% include head.html %}
+  </head>
 
-    <nav class="nav nav-inline float-right">
-      {% assign pages = site.pages | sort:"url" %}
-      {% for p in pages %}
-        {% if p.in-nav == true %}
-          <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
-        {% endif %}
-      {% endfor %}
-    </nav>
-  </div>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="clearfix">
+          <div class="header-icon float-left">{% if page.icon %}<i class="fa fa-{{ page.icon }}"></i>{% endif %}</div>
 
-  <h2 class="header-title">
-    {{ site.title }}
-    <small class="header-subtitle">{{ site.description }}</small>
-  </h2>
-</header>
+          <nav class="nav nav-inline float-right">
+            {% assign pages = site.pages | sort:"url" %}
+            {% for p in pages %}
+              {% if p.in-nav == true %}
+                <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </nav>
+        </div>
 
-<main class="page">
-  {{ content }}
-</main>
+        <h2 class="header-title">
+          {{ site.title }}
+          <small class="header-subtitle">{{ site.description }}</small>
+        </h2>
+      </div>
+    </header>
+
+    <main class="page" id="page">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="footer" id="footer">
+      {% include foot.html %}
+    </footer>
+  </body>
+</html>

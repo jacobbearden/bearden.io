@@ -84,10 +84,9 @@ $font-size-h6: $font-size-base !default;
 
 $black: #111 !default;
 $white: #fff !default;
-$red: #cc3333 !default;
-$green: #33cc33 !default;
-$blue: #3333cc !default;
-$purple: #cc33cc !default;
+$red: #ff4136 !default;
+$green: #2ecc40 !default;
+$blue: #0074d9 !default;
 $grey: #aaa !default;
 $grey-light: #ddd !default;
 $grey-lighter: #eee !default;
@@ -136,3 +135,4 @@ $screen-small-max: ($screen-medium-min - 1) !default;
 
 // Extra small screen / phone
 $screen-x-small-max: ($screen-small-min - 1) !default;
+

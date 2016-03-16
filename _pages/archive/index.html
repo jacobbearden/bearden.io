@@ -1,0 +1,11 @@
+---
+title: Archive
+icon: archive
+permalink: /archive/
+---
+{% for post in site.posts %}
+  <p>
+    <a href="{{ post.url}}" title="{{ post.title }}">{{ post.title }}</a>
+    {{ post.date | date: '%B %d, %Y' }}
+  </p>
+{% endfor %}
