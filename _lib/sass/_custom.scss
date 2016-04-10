@@ -23,16 +23,9 @@
 }
 .header-title {
   margin: 20px 0;
-
-  span {
-    color: $blue;
-  }
 }
 .header-subtitle {
   color: $grey;
-  display: block;
-  font-size: 65%;
-  margin: 10px 0;
 }
 
 .nav {
@@ -45,6 +38,7 @@
 
 .page, .post {
   padding: 0 0 65px 0;
+  text-align: justify;
 }
 
 .highlight code {

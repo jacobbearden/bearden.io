@@ -1,8 +1,8 @@
 ---
-layout: compress
+layout: null
 ---
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" amp>
   <head>
     {% include head.html %}
   </head>
@@ -11,7 +11,7 @@ layout: compress
     <header class="header" id="header">
       <div class="container">
         <div class="clearfix">
-          <div class="header-icon float-left">{% if page.icon %}<i class="fa fa-{{ page.icon }}"></i>{% endif %}</div>
+          <div class="header-icon float-left"></div>
 
           <nav class="nav nav-inline float-right">
             {% assign pages = site.pages | sort:"url" %}
@@ -23,9 +23,11 @@ layout: compress
           </nav>
         </div>
 
-        <h2 class="header-title">
+        <h1 class="header-title">
           {{ site.title }}
-          <small class="header-subtitle">{{ site.description }}</small>
+        </h1>
+        <h2 class="header-subtitle">
+          {{ site.description }}
         </h2>
       </div>
     </header>
