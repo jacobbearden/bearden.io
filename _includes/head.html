@@ -11,7 +11,7 @@
 <meta name="theme-color" content="#fff">
 
 <script>
-  var host = '{{ site.url }}';
+  var host = '{{ site.url | replace:"https://","" }}';
   if ((host == window.location.host) && (window.location.protocol != 'https:')) {
     window.location.protocol = 'https';
   }
