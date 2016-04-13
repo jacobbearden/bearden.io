@@ -1,7 +1,9 @@
 # config
 title: Jacob Bearden
 description: Developer, Designer
-url: http://bearden.io
+
+url: https://bearden.io
+enforce_ssl: bearden.io
 
 gems:
   - jekyll-sitemap
