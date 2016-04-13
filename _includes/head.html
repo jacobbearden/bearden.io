@@ -10,13 +10,6 @@
 <title>{{ page.title }} &bull; {{ site.title }}</title>
 <meta name="theme-color" content="#fff">
 
-<script>
-  var host = '{{ site.url | replace:"https://","" }}';
-  if ((host == window.location.host) && (window.location.protocol != 'https:')) {
-    window.location.protocol = 'https';
-  }
-</script>
-
 <style>
   {% capture include_to_scssify %}
     {% include main.scss %}
