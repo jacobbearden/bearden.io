@@ -36,7 +36,6 @@ include: [
   '_pages'
 ]
 exclude: [
-  'README.md',
-  'LICENSE',
-  'commit-hook.sh'
+  'CNAME',
+  'Gemfile'
 ]
