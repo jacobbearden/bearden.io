@@ -2,7 +2,7 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     {% include head.html %}
   </head>
@@ -10,25 +10,28 @@ layout: null
   <body>
     <header class="header" id="header">
       <div class="container">
-        <div class="clearfix">
-          <div class="header-icon float-left"></div>
+        <div class="grid">
+          <div class="cell-6">
+            <h1 class="header-title">
+              {{ site.title }}
+            </h1>
 
-          <nav class="nav nav-inline float-right">
-            {% assign pages = site.pages | sort:"url" %}
-            {% for p in pages %}
-              {% if p.in-nav == true %}
-                <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </nav>
+            <h2 class="header-subtitle">
+              {{ site.description }}
+            </h2>
+          </div>
+
+          <div class="cell-6">
+            <nav class="nav nav-inline float-right">
+              {% assign pages = site.pages | sort:"url" %}
+              {% for p in pages %}
+                {% if p.in-nav == true %}
+                  <a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </nav>
+          </div>
         </div>
-
-        <h1 class="header-title">
-          {{ site.title }}
-        </h1>
-        <h2 class="header-subtitle">
-          {{ site.description }}
-        </h2>
       </div>
     </header>
 

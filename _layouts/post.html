@@ -2,7 +2,7 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
     {% include head.html %}
   </head>
@@ -11,8 +11,6 @@ layout: null
     <header class="header" id="header">
       <div class="container">
         <div class="clearfix">
-          <div class="header-icon float-left"></div>
-
           <nav class="nav nav-inline float-right">
             {% assign pages = site.pages | sort:"url" %}
             {% for p in pages %}
