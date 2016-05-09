@@ -65,11 +65,11 @@ $line-height-large: $font-size-base * 2.5 !default;
 
 $font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif: Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace: Inconsolata, Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 $font-size: $font-size-base !default;
 $line-height: $line-height-base !default;
-$font-family: $font-family-monospace !default;
+$font-family: $font-family-sans-serif !default;
 
 $font-size-h1: $font-size-base * 2 !default;
 $font-size-h2: $font-size-base * 1.75 !default;
