@@ -6,8 +6,7 @@ permalink: /blog/
 {% for post in site.posts %}
   {% if post.hidden != true %}
     <p>
-      <a href="{{ post.url}}" title="{{ post.title }}">{{ post.title }}</a>
-      <em>{{ post.date | date: '%B %d, %Y' }}</em>
+      {{ post.date | date: '%Y %b %d' }} – <a href="{{ post.url}}" title="{{ post.title }}">{{ post.title }}</a>
     </p>
   {% endif %}
 {% endfor %}

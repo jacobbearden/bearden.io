@@ -1,11 +1,3 @@
-/*!
- * Simple UI
- * https://github.com/fengyuanchen/simpleui
- *
- * Copyright (c) 2015 Fengyuan Chen
- * Released under the MIT license
- */
-
 // Core variables and mixins
 @import "variables";
 @import "mixins";
@@ -27,3 +19,9 @@
 // Utilities
 @import "utilities";
 @import "print";
+
+// Syntax highlighting
+@import "syntax";
+
+// Tweaks
+@import "tweaks";

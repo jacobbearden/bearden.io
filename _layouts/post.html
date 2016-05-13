@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: compress
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -10,23 +10,28 @@ layout: null
   <body>
     <header class="header" id="header">
       <div class="container">
-        <div class="clearfix">
-          <nav class="nav nav-inline float-right">
-            {% assign pages = site.pages | sort:"url" %}
-            {% for p in pages %}
-              {% if p.in-nav == true %}
-                <a class="nav-link {% if p.url == '/blog/' %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </nav>
-        </div>
+        <div class="grid">
+          <div class="cell-10">
+            <h1 class="header-title">
+              {{ page.title }}
+            </h1>
 
-        <h1 class="header-title">
-          {{ page.title }}
-        </h1>
-        <h2 class="header-subtitle">
-          {{ page.date | date: '%B %d, %Y' }}
-        </h2>
+            <h2 class="header-subtitle">
+              {{ page.date | date: '%Y %b %d' }}
+            </h2>
+          </div>
+
+          <div class="cell-2">
+            <nav class="nav nav-inline float-right">
+              {% assign pages = site.pages | sort:"url" %}
+              {% for p in pages %}
+                {% if p.in-nav == true and p.url == '/blog/'  %}
+                  <a class="nav-link" href="{{ p.url }}">Back</a></li>
+                {% endif %}
+              {% endfor %}
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -37,7 +42,9 @@ layout: null
     </article>
 
     <footer class="footer" id="footer">
-      {% include foot.html %}
+      <div class="container">
+        {% include foot.html %}
+      </div>
     </footer>
   </body>
 </html>
