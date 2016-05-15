@@ -2,9 +2,6 @@
 title: Jacob Bearden
 description: Developer, Designer
 
-url: https://bearden.io
-enforce_ssl: bearden.io
-
 gems:
   - jekyll-sitemap
 
