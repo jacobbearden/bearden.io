@@ -6,8 +6,9 @@ Made with [Jekyll](//jekyllrb.com) and hosted on [GitHub Pages](//pages.github.c
 
 ## Install Locally
 1. `git clone git@github.com:jacobbearden/jacobbearden.github.io.git`
-2. `bundle install`
-3. `jekyll serve`
+2. `cd jacobbearden.github.io`
+3. `bundle install`
+4. `jekyll serve`
 
 ## License
-© 2016 Jacob Bearden. [MIT License](LICENSE).
+© 2016 Jacob Bearden. [MIT License](license).
