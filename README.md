@@ -11,4 +11,4 @@ Made with [Jekyll](//jekyllrb.com) and hosted on [GitHub Pages](//pages.github.c
 4. `jekyll serve`
 
 ## License
-© 2016 Jacob Bearden. [MIT License](license).
+© 2016 Jacob Bearden. [MIT License](LICENSE).
