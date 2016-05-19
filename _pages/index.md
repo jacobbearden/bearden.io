@@ -3,7 +3,7 @@ title: About
 in-nav: true
 permalink: /
 ---
-Hello, my name is Jacob Bearden. I am a programmer who likes web development, the internet, music, and Super Smash Brothers. I enjoy scratching my own itch and writing about my various endeavours in regards to programming and other miscellaneous activities.
+Hello, my name is Jacob Bearden. I am a programmer who likes web development, the internet, and music. I enjoy scratching my own itch and writing about my various endeavours in programming and other miscellaneous activities.
 
 I am currently living and working in Boise for a printshop, where I create and enhance print designs for local sports teams.
 
