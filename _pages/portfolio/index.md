@@ -1,6 +1,6 @@
 ---
 title: Portfolio
-in-nav: true
+in-nav: false
 permalink: /portfolio/
 ---
 Nothing here yet, check back soon.
