@@ -13,4 +13,5 @@ where I create and enhance print designs for local sports teams.
 I spend my free time [writing code](//github.com/jacobbearden), listening to
 music, and [tweeting](//twitter.com/jacobbearden_).
 
-Feel free to take a look at my [résumé](//dropbox.com/s/6hq5dtzmso9joyo/resume.pdf) or [get in touch](mailto:jacob@bearden.io).
+Feel free to take a look at my [résumé](//dropbox.com/s/6hq5dtzmso9joyo/resume.pdf)
+or [get in touch](mailto:jacob@bearden.io).
