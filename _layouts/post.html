@@ -1,50 +1,45 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    {% include head.html %}
-  </head>
+	<head>
+		{% include head.html %}
+	</head>
 
-  <body>
-    <header class="header" id="header">
-      <div class="container">
-        <div class="grid">
-          <div class="cell-10">
-            <h1 class="header-title">
-              {{ page.title }}
-            </h1>
+	<body>
+		<header class="container header">
+			<div class="grid">
+				<div class="cell">
+					<h1 class="header-title">
+						{{ page.title }}
+					</h1>
 
-            <h2 class="header-subtitle">
-              {{ page.date | date: '%Y %b %d' }}
-            </h2>
-          </div>
+					<h2 class="header-subtitle">
+						— {{ page.date | date: '%Y %b %d' }}
+					</h2>
+				</div>
 
-          <div class="cell-2">
-            <nav class="nav nav-inline float-right">
-              {% assign pages = site.pages | sort:"url" %}
-              {% for p in pages %}
-                {% if p.in-nav == true and p.url == '/blog/'  %}
-                  <a class="nav-link" href="{{ p.url }}">Back</a></li>
-                {% endif %}
-              {% endfor %}
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header>
+				<div class="cell float-right">
+					<nav class="nav nav-inline">
+						{% assign pages = site.pages | sort:"url" %}
+						{% for p in pages %}
+							{% if p.in-nav == true  %}
+								<a class="nav-link {% if p.url == '/blog/' %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+							{% endif %}
+						{% endfor %}
+					</nav>
+				</div>
+			</div>
+		</header>
 
-    <article class="post" id="post">
-      <div class="container">
-        {{ content }}
-      </div>
-    </article>
+		<article class="container post">
+			{{ content }}
+		</article>
 
-    <footer class="footer" id="footer">
-      <div class="container">
-        {% include foot.html %}
-      </div>
-    </footer>
-  </body>
+		<footer class="container footer">
+			{% include footer.html %}
+		</footer>
+	</body>
 </html>

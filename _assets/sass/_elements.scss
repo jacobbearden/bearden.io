@@ -1,0 +1,46 @@
+// Elements
+// -------------------------
+
+body {
+	margin: 0 0 0 100px;
+}
+
+.container {
+	max-width: 700px;
+}
+
+.header {
+	margin: 100px 0 65px 0;
+}
+@media (max-width: 650px) {
+	.header {
+		margin: 60px 0 0 0;
+	}
+}
+
+.header-subtitle {
+	color: $grey;
+}
+
+.footer {
+	color: $grey;
+	margin: 0 0 20px 0;
+
+	a {
+		color: inherit;
+	}
+}
+
+.page, .post {
+	margin: 0 0 65px 0;
+	text-align: justify;
+}
+
+img {
+	max-width: 100%;
+}
+
+.highlight code {
+	padding: 0;
+	white-space: pre;
+}

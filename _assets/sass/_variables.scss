@@ -1,15 +1,15 @@
 // Variables
-// --------------------------------------------------
+// -------------------------
 
 
 // Commmon
-// -------------------------
+// ------------
 
 $size-base: 9px !default;
 
 
 // Positioning
-// -------------------------
+// ------------
 
 // Z-indexes
 
@@ -18,7 +18,7 @@ $size-base: 9px !default;
 
 
 // Box-model
-// -------------------------
+// ------------
 
 
 // Sizes
@@ -49,7 +49,7 @@ $padding: $padding-base !default;
 
 
 // Typography
-// -------------------------
+// ------------
 
 
 // Fonts
@@ -63,13 +63,13 @@ $line-height-small: $font-size-base * 1.5 !default;
 $line-height-medium: $font-size-base * 2 !default;
 $line-height-large: $font-size-base * 2.5 !default;
 
-$font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace: "Inconsolata", Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-sans-serif: Roboto, 'Segoe UI', Avenir, Geneva, Tahoma, sans-serif;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
 
 $font-size: $font-size-base !default;
 $line-height: $line-height-base !default;
-$font-family: $font-family-monospace !default;
+$font-family: $font-family-sans-serif !default;
 
 $font-size-h1: $font-size-base * 2 !default;
 $font-size-h2: $font-size-base * 1.75 !default;
@@ -81,11 +81,12 @@ $font-size-h6: $font-size-base * 0.75 !default;
 
 // Colors
 // http://github.com/mrmrs/colors
+// ------------
 
 $black: #111 !default;
 $white: #fff !default;
 $red: #ff4136 !default;
-$green: #2ecc40 !default;
+$green: #2eCC40 !default;
 $blue: #0074d9 !default;
 $grey: #aaa !default;
 $grey-light: #ddd !default;
@@ -97,7 +98,7 @@ $color: $black !default;
 
 
 // Visual
-// -------------------------
+// ------------
 
 
 // Background
@@ -116,11 +117,11 @@ $border: $border-width $border-style $border-color !default;
 
 
 // Misc
-// -------------------------
+// ------------
 
 
 // Media queries breakpoints
-// -------------------------
+// ------------
 
 // Large screen / wide desktop
 $screen-large-min: 1200px !default;

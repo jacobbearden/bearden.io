@@ -1,5 +1,5 @@
 ---
-title: A Journey Into Nintendo Wii Modding, Part 1
+title: Fixing My Wii
 ---
 
 Back in 2006, when the Nintendo Wii was the next big thing, my family got one.
@@ -30,5 +30,3 @@ Much to my surprise, it worked perfectly! The Wii recognized the Gamecube game
 I had put in the drive!
 
 ![it worked!](/image/2016-04-14_3.jpg)
-
-Part 2 coming soon!

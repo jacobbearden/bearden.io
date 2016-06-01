@@ -1,11 +1,16 @@
-# config
+# Configutation
+# -------------------------
+
+# site information
 title: Jacob Bearden
 description: Developer, Designer
 
+# ruby gems
 gems:
   - jekyll-feed
   - jekyll-sitemap
 
+# default layouts
 defaults:
   - scope:
       type: "pages"
@@ -16,23 +21,25 @@ defaults:
     values:
       layout: "post"
 
+# blog post location
 permalink: /blog/:year/:month/:day/:title/
 
+# sass configuration
 sass:
-  style:    compressed
-  sass_dir: /_lib/sass
+  style: compressed
+  sass_dir: /_assets/sass
 
+# markdown configuration
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# compress layout config
 compress_html:
   clippings: all
 
-include: [
-  '_pages'
-]
+# exclude files from compiling
 exclude: [
   'README.md',
   'CNAME',
