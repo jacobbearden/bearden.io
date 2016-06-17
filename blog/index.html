@@ -7,7 +7,7 @@ in-nav: true
 	{% if post.hidden != true %}
 		<p>
 			{{ post.date | date: '%Y %b %d' }} —
-			<a href="{{ post.url}}" title="{{ post.title }}">{{ post.title }}</a>
+			<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
 		</p>
 	{% endif %}
 {% endfor %}

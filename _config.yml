@@ -9,6 +9,8 @@ description: Developer, Designer
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  - jemoji
+  - jekyll-github-metadata
 
 # default layouts
 defaults:
