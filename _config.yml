@@ -29,7 +29,6 @@ permalink: /blog/:year/:month/:day/:title/
 # sass configuration
 sass:
   style: compressed
-  sass_dir: /_assets/sass
 
 # markdown configuration
 markdown: kramdown
