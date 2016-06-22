@@ -7,7 +7,7 @@
 }
 
 .header {
-	margin: 100px auto 65px auto;
+	margin: 120px auto 80px auto;
 }
 @media (max-width: 650px) {
 	.header {
@@ -21,7 +21,7 @@
 
 .footer {
 	color: $grey;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 
 	a {
 		color: inherit;
@@ -29,7 +29,7 @@
 }
 
 .page, .post {
-	margin-bottom: 65px;
+	margin-bottom: 80px;
 	text-align: justify;
 }
 
