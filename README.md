@@ -3,7 +3,7 @@
 
 ## About
 - Content in [markdown](//daringfireball.net/projects/markdown/), built with [Jekyll](//jekyllrb.com), and hosted on [GitHub Pages](//pages.github.com).
-- Set in [Roboto](//fonts.google.com/specimen/Roboto), and Consolas.
+- Set in [Proxima Nova](//typekit.com/fonts/proxima-nova) and Consolas.
 
 ## Install Locally
 ```bash
