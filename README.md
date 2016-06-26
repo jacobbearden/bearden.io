@@ -1,4 +1,4 @@
-# [bearden.io](//bearden.io)
+# [bearden.io](http://bearden.io)
 > My little corner of the internet.
 
 ## About
