@@ -14,4 +14,4 @@ jekyll serve
 ```
 
 ## License
-© 2016 Jacob Bearden. [MIT License](LICENSE).
+MIT © [Jacob Bearden](//bearden.io)
