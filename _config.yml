@@ -42,8 +42,8 @@ compress_html:
 
 # exclude files from compiling
 exclude: [
-  'README.md',
+  'readme.md',
   'CNAME',
-  'LICENSE',
-  'Gemfile'
+  'license',
+  'gemfile'
 ]
