@@ -2,27 +2,17 @@
 // -------------------------
 
 @font-face {
-	font-family: 'Proxima Nova Rg';
-	src: local('Proxima Nova Rg Bold'), local('ProximaNova-Bold'),
-		url('/font/ProximaNova-Bold.ttf') format('truetype');
-	font-weight: bold;
+	font-family: 'Neutral';
+	src: url('/font/Neutral.eot');
+	src: url('/font/Neutral.eot') format('embedded-opentype'), url('/font/Neutral.woff') format('woff'), url('/font/Neutral.svg') format('svg');
 	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
 }
-
 @font-face {
-	font-family: 'Proxima Nova Rg';
-	src: local('Proxima Nova Rg Italic'), local('ProximaNova-RegularIt'),
-		url('/font/ProximaNova-RegularIt.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Proxima Nova Rg';
-	src: local('Proxima Nova Rg Regular'), local('ProximaNova-Regular'),
-		url('/font/ProximaNova-Regular.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Neutral Regular';
+	src: url('/font/Neutral.eot');
+	src: url('/font/Neutral.eot') format('embedded-opentype'), url('/font/Neutral.woff') format('woff'), url('/font/Neutral.svg') format('svg');
 }
 
 html {
