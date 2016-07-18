@@ -3,7 +3,7 @@
 
 ## About
 - Content in [markdown](//daringfireball.net/projects/markdown/), built with [Jekyll](//jekyllrb.com), and hosted on [GitHub Pages](//pages.github.com).
-- Set in [Proxima Nova](//typekit.com/fonts/proxima-nova) and Consolas.
+- Set in [Neutral](://www.typotheque.com/fonts/neutral) and Consolas.
 
 ## Install Locally
 ```bash
