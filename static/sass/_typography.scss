@@ -3,16 +3,16 @@
 
 @font-face {
 	font-family: 'Neutral';
-	src: url('/font/Neutral.eot');
-	src: url('/font/Neutral.eot') format('embedded-opentype'), url('/font/Neutral.woff') format('woff'), url('/font/Neutral.svg') format('svg');
+	src: url('/static/font/Neutral.eot');
+	src: url('/static/font/Neutral.eot') format('embedded-opentype'), url('/static/font/Neutral.woff') format('woff'), url('/static/font/Neutral.svg') format('svg');
 	font-style: normal;
 	font-weight: 400;
 	font-stretch: normal;
 }
 @font-face {
 	font-family: 'Neutral Regular';
-	src: url('/font/Neutral.eot');
-	src: url('/font/Neutral.eot') format('embedded-opentype'), url('/font/Neutral.woff') format('woff'), url('/font/Neutral.svg') format('svg');
+	src: url('/static/font/Neutral.eot');
+	src: url('/static/font/Neutral.eot') format('embedded-opentype'), url('/static/font/Neutral.woff') format('woff'), url('/static/font/Neutral.svg') format('svg');
 }
 
 html {
