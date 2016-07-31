@@ -8,8 +8,8 @@
 
 ## Install Locally
 ```bash
-git clone git@github.com:jacobbearden/jacobbearden.github.io.git
-cd jacobbearden.github.io
+git clone git@github.com:jacobbearden/bearden.io.git
+cd bearden.io
 bundle install
 jekyll serve
 ```
