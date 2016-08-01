@@ -8,7 +8,7 @@ layout: compress
 		{% include head.html %}
 	</head>
 
-	<body id="pjax">
+	<body>
 		<header class="container header">
 			<div class="grid">
 				<div class="cell">
@@ -38,11 +38,6 @@ layout: compress
 			{% include footer.html %}
 		</footer>
 
-		<script src="/static/js/pjax.js"></script>
-		<script>
-			new Pjax({
-				selectors: ['title', '#pjax']
-			});
-		</script>
+		{% include scripts.html %}
 	</body>
 </html>
