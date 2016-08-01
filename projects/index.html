@@ -1,41 +1,11 @@
 ---
 title: Projects
 in-nav: true
-
-projects:
-  - name: HTML Script
-    description: Turning HTML into a programming language. Because why not? Created as a joke, because I often see newcomers to web development immediately be shot down because "HTML isn't programming". Well it is now!
-    link: //github.com/jacobbearden/html-script
-
-  - name: Overcast Plus
-    description: Chrome extension that improves the Overcast Network website interface. Ceased development.
-    link: //github.com/jacobbearden/overcast-plus
-
-  - name: Better Wikipedia
-    description: Chrome extension that enforces the mobile version of Wikipedia and improves its interface.
-    link: //github.com/jacobbearden/better-wikipedia
-
-  - name: jQuery Arithmetic
-    description: Because you should use jQuery for that.
-    link: //github.com/jacobbearden/jquery-arithmetic
-
-  - name: Vote Count
-    description: Display an (estimated) upvote/downvote count on reddit posts.
-    link: //github.com/jacobbearden/vote-count
-
-  - name: bearden.io
-    description: My little corner of the internet, and where you currently are!
-    link: //github.com/jacobbearden/jacobbearden.github.io
-
-  - name: dotfiles
-    description: My shell, git, and other config files.
-    link: //github.com/jacobbearden/dotfiles
-
 ---
 
-{% for project in page.projects %}
+{% for repository in site.github.public_repositories %}
 	<section>
-		<a href="{{ project.link }}">{{ project.name }}</a> —
-		<p>{{ project.description }}</p>
+		<a href="{{ repository.html_url }}">{{ repository.name }}</a> —
+		<p>{{ repository.description }}</p>
 	</section>
 {% endfor %}
