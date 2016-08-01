@@ -15,15 +15,6 @@
 	}
 }
 
-.post-header {
-	margin-bottom: 80px;
-	text-align: center;
-}
-
-.header-subtitle {
-	color: $grey;
-}
-
 .footer {
 	color: $grey;
 	margin-bottom: 30px;
@@ -36,6 +27,15 @@
 .page, .post {
 	margin-bottom: 80px;
 	text-align: justify;
+}
+
+.page-header, .post-header {
+	margin-bottom: 80px;
+	text-align: center;
+}
+
+.header-subtitle {
+	color: $grey;
 }
 
 img {
