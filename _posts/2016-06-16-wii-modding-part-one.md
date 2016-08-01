@@ -6,7 +6,7 @@ A tutorial/follow along of the steps I took to modify my Nintendo Wii.
 
 ### Prerequisites
 1. SD (or SDHC) card formatted as either `FAT16` or `FAT32`
-2. [Sytem Menu 4.3](//wiibrew.org/wiki/System_Menu_4.3) (lower version will not work with this)
+2. [System Menu 4.3](//wiibrew.org/wiki/System_Menu_4.3) (lower version will not work with this)
 3. Your Wii's MAC Address
 	- Can be found in your Wii's system settings (we'll cover this in a bit).
 	- This is needed because the Wii will only accept messages addressed to the MAC address
