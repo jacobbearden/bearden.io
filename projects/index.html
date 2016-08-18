@@ -6,6 +6,6 @@ in-nav: true
 {% for repository in site.github.public_repositories %}
 	<section>
 		<a href="{{ repository.html_url }}">{{ repository.name }}</a> —
-		<p>{{ repository.description }}</p>
+		<p>{{ repository.description | xml_escape }}</p>
 	</section>
 {% endfor %}
