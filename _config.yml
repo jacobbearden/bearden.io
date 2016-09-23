@@ -7,9 +7,9 @@ description: Developer, Designer
 
 # ruby gems
 gems:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-github-metadata
+  - jekyll-assets
+  #- jekyll-feed
+  #- jekyll-sitemap
   - jemoji
 
 # default layouts
@@ -46,6 +46,7 @@ exclude: [
   'readme.md',
   'CNAME',
   'license',
-  'gemfile',
+  'Gemfile',
+  "Gemfile.lock",
   'deploy.sh'
 ]
