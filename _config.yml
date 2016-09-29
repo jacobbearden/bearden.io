@@ -37,10 +37,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# compress layout config
-compress_html:
-  clippings: all
-
 # exclude files from compiling
 exclude: [
   'readme.md',
