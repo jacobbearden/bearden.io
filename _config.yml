@@ -40,7 +40,6 @@ kramdown:
 # exclude files from compiling
 exclude: [
   'readme.md',
-  'CNAME',
   'license',
   'Gemfile',
   "Gemfile.lock",
