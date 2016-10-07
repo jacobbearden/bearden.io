@@ -1,12 +1,21 @@
 sudo: false
 language: ruby
 rvm:
-  - 2.2
+- 2.2
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+addons:
+  ssh_known_hosts: bearden.io
 before_install:
+  - openssl aes-256-cbc -K $encrypted_e765ec151234_key -iv $encrypted_e765ec151234_iv -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
+  - chmod 600 ~/.ssh/travis_rsa
   - mkdir .asset-cache
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer _site --check-favicon --check-html --disable-external
+deploy:
+  provider: script
+  script: rsync -vha _site/ deploy@bearden.io:live --delete-after
+  on:
+    branch: master
