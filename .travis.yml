@@ -10,6 +10,7 @@ addons:
 before_install:
   - openssl aes-256-cbc -K $encrypted_e765ec151234_key -iv $encrypted_e765ec151234_iv -in .travis/travis_rsa.enc -out ~/.ssh/travis_rsa -d
   - chmod 600 ~/.ssh/travis_rsa
+  - ssh-add ~/.ssh/travis_rsa
   - mkdir .asset-cache
 script:
   - bundle exec jekyll build
