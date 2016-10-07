@@ -8,28 +8,23 @@ description: Developer, Designer
 # ruby gems
 gems:
   - jekyll-assets
-  #- jekyll-feed
-  #- jekyll-sitemap
+  - jekyll-feed
+  - jekyll-sitemap
   - jemoji
 
 # default layouts
 defaults:
   - scope:
-      type: "pages"
+      type: pages
     values:
-      layout: "page"
+      layout: page
   - scope:
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
+      layout: post
 
 # blog post location
 permalink: /blog/:year/:month/:day/:title/
-
-# sass configuration
-sass:
-  sass_dir: /static/sass
-  style: compressed
 
 # markdown configuration
 markdown: kramdown
@@ -37,11 +32,26 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+# assets pipeline
+assets:
+  compress:
+    css: true
+    js: true
+  cache: false
+  digest: true
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/font
+    - _assets/img
+  features:
+    automatic_img_size: false
+
 # exclude files from compiling
 exclude: [
-  'readme.md',
-  'license',
-  'Gemfile',
-  "Gemfile.lock",
-  'deploy.sh'
+  readme.md,
+  license,
+  Gemfile,
+  Gemfile.lock,
+  deploy.sh
 ]

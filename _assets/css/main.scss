@@ -1,16 +1,13 @@
----
----
-
 // core variables and mixins
 @import 'variables';
 @import 'mixins';
 
 // normalize
-@import 'normalize';
+@import 'vendor/normalize';
 
 // content
 @import 'typography';
-@import 'gridsystem';
+@import 'grid-system';
 @import 'buttons';
 @import 'forms';
 @import 'tables';
@@ -21,10 +18,10 @@
 
 // utilities
 @import 'utilities';
-@import 'print';
+@import 'vendor/print';
+
+// syntax highlighting
+@import 'vendor/github-syntax';
 
 // shame
 @import 'shame';
-
-// syntax highlighting
-@import 'syntax';
