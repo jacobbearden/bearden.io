@@ -1,21 +1,7 @@
 // Typography
 // -------------------------
 
-@font-face {
-	font-family: 'Neutral';
-	src: url(asset_path('Neutral.eot'));
-	src: url(asset_path('Neutral.eot')) format('embedded-opentype'), url(asset_path('Neutral.woff')) format('woff'), url(asset_path('Neutral.svg')) format('svg');
-	font-style: normal;
-	font-weight: 400;
-	font-stretch: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: 'Neutral Regular';
-	src: url(asset_path('Neutral.eot'));
-	src: url(asset_path('Neutral.eot')) format('embedded-opentype'), url(asset_path('Neutral.woff')) format('woff'), url(asset_path('Neutral.svg')) format('svg');
-	font-display: swap;
-}
+@import 'font-face';
 
 html {
 	box-sizing: border-box;

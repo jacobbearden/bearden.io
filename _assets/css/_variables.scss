@@ -63,9 +63,9 @@ $line-height-small: $font-size-base * 1.5 !default;
 $line-height-medium: $font-size-base * 2 !default;
 $line-height-large: $font-size-base * 2.5 !default;
 
-$font-family-sans-serif: Neutral, Roboto, 'Segoe UI', Avenir, Geneva, Tahoma, sans-serif;
-$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
-$font-family-monospace: Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
+$font-family-sans-serif: 'Noto Sans', Roboto, 'Segoe UI', Avenir, Geneva, Tahoma, sans-serif;
+$font-family-serif: 'Noto Serif', Georgia, 'Times New Roman', Times, serif !default;
+$font-family-monospace: 'Noto Mono', Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
 
 $font-size: $font-size-base !default;
 $line-height: $line-height-base !default;
