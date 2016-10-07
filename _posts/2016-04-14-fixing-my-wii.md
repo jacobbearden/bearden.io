@@ -8,12 +8,12 @@ Recently, after taking an interest in competitive Super Smash Brothers, I rememb
 
 Not wanting to spend money on a lens cleaning kit I decided to take matters in to my own hands. Using a small piece of cardboard (from a cereal box I might add), tape, a DVD, and a band-aid, I assembled my own disk cleaner:
 
-{% img 2016-04-14_1 %}
+{% img 2016-04-14_1 magick:resize:614 %}
 
 Yes, that was my disk cleaner I macgyvered together. The idea was that I'd slide the device in to the disk drive of the Wii, and use the cardboard extending off the back to move it back and forth, ensuring the band-aid wiped off the lens.
 
-{% img 2016-04-14_2 %}
+{% img 2016-04-14_2 magick:resize:614 %}
 
 Much to my surprise, it worked perfectly! The Wii recognized the Gamecube game I had put in the drive!
 
-{% img 2016-04-14_3 %}
+{% img 2016-04-14_3 magick:resize:614 %}

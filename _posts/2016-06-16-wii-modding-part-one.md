@@ -38,7 +38,7 @@ The LetterBomb exploit is a safe way to install the "Homebrew Channel" onto your
 #### Installing Homebrew
 Your screen should look something like this:
 
-{% img 2016-06-16_2 %}
+{% img 2016-06-16_2 magick:resize:614 %}
 
 If you have a newer Wii you will only be able to install [BootMii](//www.wiibrew.org/wiki/BootMii) as `IOS`.
 
