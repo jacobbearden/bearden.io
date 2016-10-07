@@ -1,13 +1,19 @@
 {% include header.html %}
 
-<article class="container post">
-	<header class="post-header">
-		<h1 class="header-title">{{ page.title }}</h1>
+<main class="container post" role="main">
+	<article itemscope itemtype="http://schema.org/Article">
+		<header class="post-header">
+			<h1 class="header-title" itemprop="name headline">{{ page.title }}</h1>
 
-		<h2 class="header-subtitle">{{ page.date | date: '%Y %b %d' }}</h2>
-	</header>
+			<h2 class="header-subtitle">
+				<time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date: '%Y %b %d' }}</time>
+			</h2>
+		</header>
 
-	{{ content }}
-</article>
+		<div itemprop="articleBody">
+			{{ content }}
+		</div>
+	</article>
+</main>
 
 {% include footer.html %}
