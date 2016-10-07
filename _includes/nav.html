@@ -1,0 +1,8 @@
+<nav class="nav nav-inline">
+	{% assign pages = site.pages | sort:"url" %}
+	{% for p in pages %}
+		{% if p.in-nav == true %}
+			<a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
+		{% endif %}
+	{% endfor %}
+</nav>

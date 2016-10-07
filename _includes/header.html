@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<meta name="author" content="{{ site.title }}">
+		<meta name="description" content="{{ site.description }}">
+
+		<title>{{ page.title }} — {{ site.title }}</title>
+
+		<meta name="theme-color" content="#fff">
+
+		<link rel="shortcut icon" href="{% asset_path favicon %}">
+
+		<style>
+			{% asset main.css %}
+		</style>
+	</head>
+	<body>
+		<header class="container header">
+			<div class="grid">
+				<div class="cell">
+					<a href="/">
+						{% img logo alt:JB %}
+					</a>
+				</div>
+				<div class="cell float-right">
+					{% include nav.html %}
+				</div>
+			</div>
+		</header>

@@ -1,43 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		{% include head.html %}
-	</head>
+{% include header.html %}
 
-	<body>
-		<header class="container header">
-			<div class="grid">
-				<div class="cell">
-					<a href="/">
-						{% img logo alt:JB %}
-					</a>
-				</div>
+<main class="container page">
+	<header class="page-header">
+		<h1 class="header-title">{{ page.title }}</h1>
+	</header>
 
-				<div class="cell float-right">
-					<nav class="nav nav-inline">
-						{% assign pages = site.pages | sort:"url" %}
-						{% for p in pages %}
-							{% if p.in-nav == true %}
-								<a class="nav-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url }}">{{ p.title }}</a></li>
-							{% endif %}
-						{% endfor %}
-					</nav>
-				</div>
-			</div>
-		</header>
+	{{ content }}
+</main>
 
-		<main class="container page">
-			<header class="page-header">
-				<h1 class="header-title">{{ page.title }}</h1>
-			</header>
-
-			{{ content }}
-		</main>
-
-		<footer class="container footer">
-			{% include footer.html %}
-		</footer>
-
-		{% include scripts.html %}
-	</body>
-</html>
+{% include footer.html %}
