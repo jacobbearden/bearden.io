@@ -13,6 +13,7 @@ script:
   - jekyll build
   - htmlproofer _site --check-favicon --check-html --allow-hash-href --only-4xx
 before_deploy:
+  - eval $(ssh-agent -s)
   - chmod 600 ~/.ssh/travis_rsa
   - ssh-add ~/.ssh/travis_rsa
 deploy:
