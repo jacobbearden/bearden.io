@@ -4,9 +4,9 @@
 
 
 ## About
-- Content in [markdown](//daringfireball.net/projects/markdown/), built with [Jekyll](//jekyllrb.com), and hosted on [DigitalOcean](//digitalocean.com).
-- Set in [Noto](//google.com/get/noto/).
-- Deployed with [rsync](//rsync.samba.org/).
+- Content in [markdown](//daringfireball.net/projects/markdown), built with [Jekyll](//jekyllrb.com), and hosted on [DigitalOcean](//digitalocean.com).
+- Set in [Noto](//google.com/get/noto).
+- Deployed with [rsync](//rsync.samba.org) via [Travis](//travis-ci.org).
 
 
 ## Install Locally
