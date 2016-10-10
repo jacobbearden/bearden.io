@@ -3,7 +3,7 @@ rvm:
   - 2.2
 env:
   global:
-    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up install of html-proofer
 addons:
   ssh_known_hosts: bearden.io
 before_install:
