@@ -53,6 +53,5 @@ exclude: [
   readme.md,
   license,
   Gemfile,
-  Gemfile.lock,
-  deploy.sh
+  Gemfile.lock
 ]
