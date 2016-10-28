@@ -42,7 +42,6 @@ assets:
   digest: true
   sources:
     - _assets/css
-    - _assets/js
     - _assets/font
     - _assets/img
   features:
