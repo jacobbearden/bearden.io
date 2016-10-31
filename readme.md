@@ -4,12 +4,14 @@
 
 
 ## About
+
 - Content in [markdown](//daringfireball.net/projects/markdown), built with [Jekyll](//jekyllrb.com), and hosted on [DigitalOcean](//digitalocean.com).
 - Set in [Noto](//google.com/get/noto).
 - Deployed with [rsync](//rsync.samba.org) via [Travis](//travis-ci.org).
 
 
 ## Install Locally
+
 ```bash
 git clone git@github.com:jacobbearden/bearden.io.git
 cd bearden.io
@@ -19,4 +21,5 @@ jekyll serve
 
 
 ## License
+
 MIT © [Jacob Bearden](//bearden.io)
