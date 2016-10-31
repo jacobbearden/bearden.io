@@ -7,18 +7,18 @@ env:
 addons:
   ssh_known_hosts: bearden.io
 before_install:
-  - openssl aes-256-cbc -K $encrypted_e765ec151234_key -iv $encrypted_e765ec151234_iv -in .travis.enc -out ~/.ssh/travis_rsa -d
+  - openssl aes-256-cbc -K $deploy_key -iv $deploy_iv -in .travis.enc -out /tmp/travis_rsa -d
   - mkdir .asset-cache
 script:
   - jekyll build
   - htmlproofer _site --check-favicon --check-html --allow-hash-href --only-4xx
 before_deploy:
   - eval $(ssh-agent -s)
-  - chmod 600 ~/.ssh/travis_rsa
-  - ssh-add ~/.ssh/travis_rsa
+  - chmod 600 /tmp/travis_rsa
+  - ssh-add /tmp/travis_rsa
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -vha _site/ deploy@bearden.io:live --delete-after
+  script: rsync -vha --delete-after _dist deploy@bearden.io:live
   on:
     branch: master
