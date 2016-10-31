@@ -6,6 +6,9 @@ title: Jacob Bearden
 description: Developer, Designer
 url: https://bearden.io
 
+# core settings
+destination: _dist
+
 # ruby gems
 gems:
   - jekyll-assets
