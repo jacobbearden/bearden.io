@@ -10,7 +10,7 @@ url: https://bearden.io
 destination: _dist
 
 # ruby gems
-gems:
+plugins:
   - jekyll-assets
   - jekyll-feed
   - jekyll-sitemap
