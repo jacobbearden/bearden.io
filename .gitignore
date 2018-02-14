@@ -1,7 +1,0 @@
-_dist
-
-.asset-cache
-.jekyll-metadata
-.sass-cache
-
-Gemfile.lock
