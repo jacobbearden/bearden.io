@@ -1,0 +1,57 @@
+# configuration
+
+## site info
+title: bearden.io
+description: developer, designer
+url: https://bearden.io
+
+## compile settings
+destination: _dist
+
+### plugins
+plugins:
+  - jekyll-assets
+  - jekyll-feed
+  - jekyll-sitemap
+
+### default layouts
+defaults:
+  - scope:
+      type: pages
+    values:
+      layout: page
+  - scope:
+      type: posts
+    values:
+      layout: post
+
+### blog url
+permalink: /blog/:title/
+
+### markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+### assets
+assets:
+  compress:
+    css: true
+    js: true
+  cache: false
+  digest: true
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/font
+    - _assets/img
+  features:
+    automatic_img_size: false
+
+### exclude files
+exclude: [
+  readme.md,
+  Gemfile,
+  Gemfile.lock
+]
