@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+@import 'lib/modern-normalize.min';
+
+body {
+  margin: auto;
+  padding: 3rem 1rem;
+  max-width: 40rem;
+  
+  color: #222;
+}
+
+a {
+  color: #0074d9;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  color: #aaa;
+
+  span {
+    display: block;
+  }
+}
+
+small {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #aaa;
+}
+
+h5, h6 {
+  font-weight: normal;
+  color: #aaa;
+}
+
+.dark {
+  color: #fff;
+  background: #222;
+
+  p, small {
+    color: #ccc;
+  }
+
+  a {
+    color: #7fdbff
+  }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% asset favicon %}
+<title>{{ page.title }} – {{ site.title}}</title>
+
+{% asset main.css %}
+
+</head>
+
+<body>
+
+<nav>
+
+<h1>{% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %} <small>{{ page.description }}</small></h1>
+
+</nav>
