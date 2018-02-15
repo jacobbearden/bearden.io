@@ -19,6 +19,6 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -vha --delete-after _dist/ travis@bearden.io:/home/live/bearden.io
+  script: rsync -vha --delete-after _dist/ travis@bearden.io:bearden.io
   on:
     branch: master
