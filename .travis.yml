@@ -11,7 +11,7 @@ before_install:
   - mkdir .asset-cache
 script:
   - jekyll build
-  - htmlproofer _dist --check-favicon --check-html --only-4xx
+  - htmlproofer _dist --check-html --only-4xx
 before_deploy:
   - eval $(ssh-agent -s)
   - chmod 600 travis_rsa
