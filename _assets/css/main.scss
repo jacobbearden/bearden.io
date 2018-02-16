@@ -39,6 +39,20 @@ h5, h6 {
   color: #aaa;
 }
 
+.split {
+  overflow: auto;
+
+  &>:first-child {
+    float: left;
+    width:50%;
+  }
+
+  &>:last-child {
+    float: right;
+    width: 50%;
+  }
+}
+
 .dark {
   color: #fff;
   background: #222;

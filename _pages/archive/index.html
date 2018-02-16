@@ -2,6 +2,8 @@
 title: archive
 description: all of my writings and ramblings
 ---
-{% for post in site.posts %}
-<p>{{ post.date | date: '%Y %b %d' }} — <a href="{{ post.url }}">{{ post.title }}</a></p>
-{% endfor %}
+<a href="/blog">&larr; blog</a>
+
+<ul>{% for post in site.posts %}
+  <li>{{ post.date | date: '%Y %b %d' }} — <a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+</ul>
