@@ -2,7 +2,7 @@
 title: blog
 description: writings and ramblings
 ---
-<a href="/">&larr; home</a> &nbsp;|&nbsp;  <a href="/archive">archive</a>
+<a href="/">&larr; home</a> <i>|</i>  <a href="/archive">archive</a>
 
 <ul>{% for post in site.posts %}{% if post.hidden != true %}
   <li>{{ post.date | date: '%Y %b %d' }} — <a href="{{ post.url }}">{{ post.title }}</a></li>{% endif %}{% endfor %}
