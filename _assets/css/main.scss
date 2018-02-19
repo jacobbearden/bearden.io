@@ -17,6 +17,21 @@ a {
   &:hover {
     text-decoration: underline;
   }
+
+  &[href*='//']:not([href*='bearden.io'])::after {
+    content: '\21E2 ';
+    display: inline-block;
+    position: relative;
+    margin: 0px .4em 0px .3rem;
+    padding-left: .2em;
+    height: 9px;
+    width: 9px;
+    font-size: .8em;
+    font-weight: 100;
+    line-height: 8px;
+    color: #aaa;
+    border: 1px dotted #aaa;
+  }
 }
 
 footer {
@@ -43,31 +58,4 @@ i {
   padding: 0 4px;
   font-style: normal;
   color: #aaa;
-}
-
-.split {
-  overflow: auto;
-
-  &>:first-child {
-    float: left;
-    width:50%;
-  }
-
-  &>:last-child {
-    float: right;
-    width: 50%;
-  }
-}
-
-.dark {
-  color: #fff;
-  background: #222;
-
-  p, small {
-    color: #ccc;
-  }
-
-  a {
-    color: #7fdbff
-  }
 }
