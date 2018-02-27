@@ -7,6 +7,9 @@ body {
   padding: 3rem 1rem;
   max-width: 40rem;
   color: #111;
+
+  moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -18,7 +21,7 @@ a {
   }
 
   &[href*='//']:not([href*='bearden.io'])::after {
-    content: '\21E2 ';
+    content: '\21E2';
     display: inline-block;
     position: relative;
     margin: 0px .4em 0px .3rem;
