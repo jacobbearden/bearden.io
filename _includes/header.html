@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 {% asset favicon %}
-<title>{{ page.title }} – {{ site.title}}</title>
+<title>{{ page.title }} – {{ site.title }}</title>
 
 {% asset main.css %}
 
@@ -21,7 +21,7 @@
 <h1>
   
 {% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}
-<small>{{ page.description }}</small>
+<small>{% if page.layout == 'post' %}{{ page.date | date: '%Y-%m-%d'}}{% else %}{{ page.description }}{% endif %}</small>
 
 </h1>
 

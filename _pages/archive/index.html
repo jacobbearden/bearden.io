@@ -1,7 +1,7 @@
 ---
-title: archive
-description: hidden posts
+title: Archive
+description: Hidden Posts
 ---
 <ul>{% for post in site.posts %}
-  <li>{{ post.date | date: '%Y %b %d' }} — <a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+  <li>{{ post.date | date: '%Y-%m-%d' }} — <a href="{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
 </ul>

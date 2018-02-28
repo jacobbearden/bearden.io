@@ -1,6 +1,6 @@
 ---
-title: index
-heading: bearden&middot;io
-description: software developer
+title: Home
+heading: Jacob Bearden
+description: Software Developer
 in-nav: true
 ---
