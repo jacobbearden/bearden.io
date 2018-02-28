@@ -67,3 +67,9 @@ small {
   font-weight: normal;
   color: #aaa;
 }
+
+@media (max-width: 575.98px) {
+  small {
+    display: block;
+  }
+}
