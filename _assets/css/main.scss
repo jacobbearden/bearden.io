@@ -36,6 +36,19 @@ a {
   }
 }
 
+nav {
+  a {
+    &.active {
+      color: #111;
+    }
+    
+    &:not(:last-child)::after {
+      content: ',';
+      color: #111;
+    }
+  }
+}
+
 footer {
   margin-top: 3rem;
   color: #aaa;
