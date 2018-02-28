@@ -5,7 +5,7 @@
 body {
   margin: auto;
   padding: 3rem 1rem;
-  max-width: 40rem;
+  max-width: 36rem;
   color: #111;
 
   moz-osx-font-smoothing: grayscale;
@@ -47,6 +47,10 @@ nav {
       color: #111;
     }
   }
+}
+
+main, article {
+  margin-top: 3rem;
 }
 
 footer {
