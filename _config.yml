@@ -36,18 +36,13 @@ kramdown:
 
 ### assets
 assets:
-  compress:
-    css: true
-    js: true
-  cache: false
-  digest: true
+  source_maps: false
+  compression: true
   sources:
     - _assets/css
     - _assets/js
     - _assets/font
     - _assets/img
-  features:
-    automatic_img_size: false
 
 ### exclude files
 exclude: [

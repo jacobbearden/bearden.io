@@ -7,4 +7,5 @@ gem 'jekyll-sitemap'
 
 gem 'html-proofer'
 
+gem 'uglifier'
 gem 'mini_magick'
