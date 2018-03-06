@@ -43,7 +43,10 @@ nav {
     }
     
     &:not(:last-child)::after {
-      content: ',';
+      content: '/';
+      display: inline-block;
+      padding-left: .22rem;
+      font-weight: normal;
       color: #111;
     }
   }
