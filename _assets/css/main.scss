@@ -68,6 +68,33 @@ hr {
   border-top: 1px solid #ccc;
 }
 
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-navy    { color: #001f3f; }
+.text-blue    { color: #0074d9; }
+.text-aqua    { color: #7fdbff; }
+.text-teal    { color: #39cccc; }
+.text-olive   { color: #3d9970; }
+.text-green   { color: #2ecc40; }
+.text-lime    { color: #01ff70; }
+.text-yellow  { color: #ffdc00; }
+.text-orange  { color: #ff851b; }
+.text-red     { color: #ff4136; }
+.text-fuchsia { color: #f012be; }
+.text-purple  { color: #b10dc9; }
+.text-maroon  { color: #85144b; }
+.text-white   { color: #ffffff; }
+.text-silver  { color: #dddddd; }
+.text-gray    { color: #aaaaaa; }
+.text-black   { color: #111111; }
+
 @media (max-width: 575.98px) {
   small {
     display: block;
