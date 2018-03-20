@@ -20,7 +20,7 @@ a {
     text-decoration: underline;
   }
 
-  &[href*='//']:not([href*='bearden.io'])::after {
+  /*&[href*='//']:not([href*='bearden.io'])::after {
     content: '\21E2';
     display: inline-block;
     position: relative;
@@ -33,7 +33,7 @@ a {
     line-height: 8px;
     color: #aaa;
     border: 1px dotted #aaa;
-  }
+  }*/
 }
 
 nav {
