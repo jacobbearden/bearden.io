@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 @import 'lib/modern-normalize.min';
+@import 'lib/syntax-github';
 
 body {
   margin: auto;
@@ -46,10 +47,6 @@ nav {
 
 main, article {
   margin-top: 3rem;
-
-  code {
-    font-size: .85em;
-  }
 }
 
 footer {
@@ -74,6 +71,23 @@ hr {
 
 img {
   max-width: 100%;
+  border-radius: 3px;
+}
+
+pre {
+  padding: .5rem;
+  background: #f6f6f6;
+  border-radius: 3px;
+}
+
+code {
+  font-size: .85em;
+}
+
+blockquote {
+  margin-left: 0px;
+  padding-left: 24px;
+  border-left: 4px solid #f6f6f6;
 }
 
 .columns {

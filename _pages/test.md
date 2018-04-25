@@ -14,6 +14,7 @@ sitemap: false
 * [Table](#Table)
 * [Code](#Code)
 * [Inline elements](#Inline)
+* [Colored text](#Colors)
 
 ***
 
@@ -175,3 +176,23 @@ Incididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip 
 [![Box](http://img.youtube.com/vi/qEuD6v1Y9fg/0.jpg)](http://www.youtube.com/watch?v=qEuD6v1Y9fg)
 
 Reprehenderit non eu quis in ad elit esse qui aute id [incididunt](#!) dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure.
+
+# <a name="Colors"></a> Colored text
+
+<p class="text-navy">Navy text</p>
+<p class="text-blue">Blue text</p>
+<p class="text-aqua">Aqua text</p>
+<p class="text-teal">Teal text</p>
+<p class="text-olive">Olive text</p>
+<p class="text-green">Green text</p>
+<p class="text-lime">Lime text</p>
+<p class="text-yellow">Yellow text</p>
+<p class="text-orange">Orange text</p>
+<p class="text-red">Red text</p>
+<p class="text-fuchsia">Fuchsia text</p>
+<p class="text-purple">Purple text</p>
+<p class="text-maroon">Maroon text</p>
+<p class="text-white">White text</p>
+<p class="text-silver">Silver text</p>
+<p class="text-gray">Gray text</p>
+<p class="text-black">Black text</p>
