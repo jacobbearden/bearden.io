@@ -2,27 +2,39 @@
 <html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% asset favicon %}
+  <title>{{ page.title }} – {{ site.title }}</title>
 
-{% asset favicon %}
-<title>{{ page.title }} – {{ site.title }}</title>
-
-{% asset main.css %}
-
+  {% asset main.css %}
 </head>
 
 <body>
+  <nav>
 
-<nav>
+    <h1>
+      {% if page.heading %}
+        {{ page.heading }}
+      {% else %}
+        {{ page.title }}
+      {% endif %}
 
-<h1>
-  {% if page.heading %}{{ page.heading }}{% else %}{{ page.title }}{% endif %}
-  <small>{% if page.layout == 'post' %}{{ page.date | date: '%Y-%m-%d'}}{% else %}{{ page.description }}{% endif %}</small>
-</h1>
+      <small>
+        {% if page.layout == 'post' %}
+          {{ page.date | date: '%Y-%m-%d'}}
+        {% else %}
+          {{ page.description }}
+        {% endif %}
+      </small>
+    </h1>
 
-{% assign pages = site.pages | sort:"url" %}{% for p in pages %}{% if p.in-nav == true %}<a {% if p.url == page.url or (p.url == '/blog/' and page.layout == 'post') %}class="active" {% endif %}href="{{ p.url }}">{{ p.title }}</a>
-{% endif %}{% endfor %}
-</nav>
+    {% assign pages = site.pages | sort:"url" %}
+    {% for p in pages %}
+      {% if p.in-nav == true %}
+        <a {% if p.url == page.url or (p.url == '/blog/' and page.layout == 'post') %}class="active" {% endif %}href="{{ p.url }}">{{ p.title }}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
