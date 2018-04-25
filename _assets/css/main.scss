@@ -99,6 +99,11 @@ blockquote {
   float: right;
 }
 
+.full-width {
+  margin-right: calc(-100vw / 2 + 36rem / 2);
+  margin-left: calc(-100vw / 2 + 36rem / 2);;
+}
+
 .text-navy    { color: #001f3f; }
 .text-blue    { color: #0074d9; }
 .text-aqua    { color: #7fdbff; }

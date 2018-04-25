@@ -14,6 +14,7 @@ sitemap: false
 * [Table](#Table)
 * [Code](#Code)
 * [Inline elements](#Inline)
+* [Full width section](#Fullwidth)
 * [Colored text](#Colors)
 
 ***
@@ -176,6 +177,10 @@ Incididunt in culpa cupidatat mollit cillum qui proident sit. In cillum aliquip 
 [![Box](http://img.youtube.com/vi/qEuD6v1Y9fg/0.jpg)](http://www.youtube.com/watch?v=qEuD6v1Y9fg)
 
 Reprehenderit non eu quis in ad elit esse qui aute id [incididunt](#!) dolore cillum. Esse laboris consequat dolor anim exercitation tempor aliqua deserunt velit magna laboris. Culpa culpa minim duis amet mollit do quis amet commodo nulla irure.
+
+# <a name="Fullwidth"></a> Full width section
+
+<div class="full-width">Full width section</div>
 
 # <a name="Colors"></a> Colored text
 
