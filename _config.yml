@@ -48,5 +48,6 @@ assets:
 exclude: [
   readme.md,
   Gemfile,
-  Gemfile.lock
+  Gemfile.lock,
+  vendor
 ]
