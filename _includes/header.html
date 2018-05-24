@@ -16,6 +16,7 @@
   <a name="top"></a>
 
   <nav>
+    {% asset me.jpg alt='me' width='128' %}
 
     <h1>
       {% if page.heading %}
@@ -26,14 +27,14 @@
 
       <small>
         {% if page.layout == 'post' %}
-          {{ page.date | date: '%Y-%m-%d'}}
+          {{ page.date | date: '%B %-d, %Y'}}
         {% else %}
           {{ page.description }}
         {% endif %}
       </small>
     </h1>
 
-    {% assign pages = site.pages | sort:"url" %}
+    {% assign pages = site.pages | sort:'url' %}
     {% for p in pages %}
       {% if p.in-nav == true %}
         <a {% if p.url == page.url or (p.url == '/blog/' and page.layout == 'post') %}class="active" {% endif %}href="{{ p.url }}">{{ p.title }}</a>

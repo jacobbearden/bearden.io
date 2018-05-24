@@ -38,10 +38,18 @@ a {
 }
 
 nav {
+  position: relative;
+
   a {
     &.active {
       color: #111;
     }
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
@@ -123,6 +131,14 @@ blockquote {
 .text-black   { color: #111111; }
 
 @media (max-width: 575.98px) {
+  body {
+    padding-top: 2rem;
+  }
+
+  nav img {
+    position: initial;
+  }
+
   small {
     display: block;
   }
