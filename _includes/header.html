@@ -35,7 +35,7 @@
     {% assign pages = site.pages | sort:'url' %}
     {% for p in pages %}
       {% if p.in-nav == true %}
-        <a {% if p.url == page.url or (p.url == '/blog/' and page.layout == 'post') %}class="active" {% endif %}href="{{ p.url }}">{{ p.title }}</a>
+        <a {% if p.url == page.url or (p.url == '/blog/' and page.layout == 'post') %} class="active" {% endif %} href="{{ p.url }}">{{ p.title }}</a>
       {% endif %}
     {% endfor %}
   </nav>
