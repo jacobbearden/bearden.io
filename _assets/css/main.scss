@@ -78,6 +78,18 @@ small {
   color: #aaa;
 }
 
+.new:after {
+  content: 'NEW';
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: .5rem;
+  padding: 0 .2rem;
+  font-size: .5rem;
+  font-weight: bolder;
+  background: #ffdc00;
+  border-radius: .2rem;
+}
+
 hr {
   border: none;
   border-top: 1px solid #ccc;

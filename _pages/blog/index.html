@@ -10,7 +10,7 @@ in-nav: true
   <ul>
     {% for post in year.items %}
       {% if post.hidden != true %}
-        <li>
+        <li {% if post.new %} class="new" {% endif %}>
           {{ post.date | date: '%Y-%m-%d' }}: <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
       {% endif %}
