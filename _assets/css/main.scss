@@ -41,6 +41,12 @@ nav {
   position: relative;
 
   a {
+    margin-right: .5rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
     &.active {
       color: #111;
     }
