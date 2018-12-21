@@ -28,8 +28,10 @@ body {
 a {
   color: #0074d9;
   text-decoration: none;
+  transition: .2s;
 
   &:hover {
+    color: darken(#0074d9, 6%);
     text-decoration: underline;
   }
 
