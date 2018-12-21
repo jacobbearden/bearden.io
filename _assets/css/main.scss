@@ -9,6 +9,18 @@ body {
   max-width: 36rem;
   color: #111;
 
+  font-family: 'Inter UI',
+               -apple-system,
+               BlinkMacSystemFont,
+               'Segoe UI',
+               Roboto,
+               Helvetica,
+               Arial,
+               sans-serif,
+               'Apple Color Emoji',
+               'Segoe UI Emoji',
+               'Segoe UI Symbol';
+
   moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -161,3 +173,5 @@ blockquote {
     display: block;
   }
 }
+
+@import '../font/inter-ui/inter-ui';
