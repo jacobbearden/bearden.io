@@ -51,6 +51,36 @@ a {
   }*/
 }
 
+#toggle-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dark {
+  background: #2b2b2b;
+  color: #ccc;
+
+  nav a.active,
+  small,
+  footer {
+    color: #99999b;
+  }
+
+  pre {
+    background: #1b1b1b;
+  }
+
+  blockquote {
+    border-color: #1b1b1b;
+  }
+}
+
 nav {
   position: relative;
 
