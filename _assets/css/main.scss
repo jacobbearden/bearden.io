@@ -90,7 +90,7 @@ nav {
     &:last-child {
       margin-right: 0;
     }
-    
+
     &.active {
       color: #111;
     }
@@ -202,4 +202,4 @@ blockquote {
   }
 }
 
-@import '../font/inter-ui/inter-ui';
+@import '../font/inter/inter';
