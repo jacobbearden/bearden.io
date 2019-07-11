@@ -139,10 +139,10 @@ pre {
   padding: .5rem;
   background: #f6f6f6;
   border-radius: 3px;
-}
-
-.highlight {
-  overflow-x: scroll;
+  
+  &.highlight {
+    overflow-x: auto;
+  }
 }
 
 blockquote {
