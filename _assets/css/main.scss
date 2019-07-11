@@ -30,10 +30,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
+a,
+.link {
   color: #0074d9;
   text-decoration: none;
   transition: color .2s;
+  cursor: pointer;
 
   &:hover {
     color: darken(#0074d9, 6%);
@@ -106,6 +108,13 @@ footer {
   }
 }
 
+#back-to-top {
+  display: none;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
+
 small {
   font-size: 1rem;
   font-weight: normal;
@@ -139,7 +148,7 @@ pre {
   padding: .5rem;
   background: #f6f6f6;
   border-radius: 3px;
-  
+
   &.highlight {
     overflow-x: auto;
   }
@@ -164,10 +173,10 @@ blockquote {
   margin: 0 calc(-50vw + 17.5rem);
   padding: 1rem;
   background: #f6f6f6;
-  
+
   img {
     margin-right: 1rem;
-    
+
     &:last-child {
       margin-right: initial;
     }
@@ -208,14 +217,14 @@ blockquote {
   small {
     display: block;
   }
-  
+
   .full-width {
     margin: 0 -1rem;
-    
+
     img {
       display: block;
       margin: 0 auto 1rem;
-      
+
       &:last-child {
         margin-bottom: initial;
       }
