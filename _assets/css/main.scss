@@ -145,9 +145,16 @@ blockquote {
   border-left: 4px solid #f6f6f6;
 }
 
-.columns {
+.column-wrap {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
 }
 
 .float-right {
@@ -201,6 +208,10 @@ blockquote {
 
   small {
     display: block;
+  }
+  
+  .column-wrap .column {
+    flex: 100%;
   }
 
   .full-width {
