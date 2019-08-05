@@ -2,10 +2,10 @@ const element = document.getElementById('back-to-top');
 
 window.onscroll = () => {
   if (window.pageYOffset > 190) {
-    element.style.display =  'block';
+    element.style.display = 'block';
     return;
   }
-  element.style.display =  'none';
+  element.style.display = 'none';
 };
 
 element.onclick = () => {
