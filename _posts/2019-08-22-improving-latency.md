@@ -21,12 +21,9 @@ This is a short tutorial on how to improve latency in online video games, and an
 1. Repeat the below steps for each folder within the "Interaces" folder
     - Create two `DWORD` registry keys called `TcpAckFrequency` and `TCPNoDelay`
         - The names are case-sensitive, so make sure they're the exact same as above
-{% asset improve-latency-1.png alt='DWORD Key Creation' %}
     - Double-click on each of the new registry keys and change the value from `0` to `1`
         - Ensure you are using base hexadecimal
-{% asset improve-latency-2.png alt='Setting Key Value' %}
 1. Confirm that you have created and set these keys for all folders within the "Interfaces" folder
-{% asset improve-latency-3.png alt='Showing All Folders' %}
 1. Restart your computer
 
 ### Uninstall
