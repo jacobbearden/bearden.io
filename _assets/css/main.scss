@@ -149,7 +149,7 @@ blockquote {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
+
   .column {
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@ blockquote {
   small {
     display: block;
   }
-  
+
   .column-wrap .column {
     flex: 100%;
   }
@@ -226,6 +226,37 @@ blockquote {
       }
     }
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f5f5f5;
+    background: #121212;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong {
+    color: #fff;
+  }
+
+  nav a.active {
+    color: #fff;
+  }
+
+  .full-width {
+    background: #212121;
+  }
+
+  blockquote {
+    border-color: #212121;
+  }
+
+  @import 'lib/syntax-native';
 }
 
 @import '../font/inter/inter-min';
