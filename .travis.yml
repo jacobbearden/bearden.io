@@ -4,8 +4,6 @@ rvm:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-addons:
-  ssh_known_hosts: bearden.io
 before_install:
   - mkdir .asset-cache
 script:
