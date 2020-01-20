@@ -5,9 +5,7 @@
 
 ## about
 
-- content in [markdown](//daringfireball.net/projects/markdown), built with [jekyll](//jekyllrb.com), and hosted on [vultr](//vultr.com).
-- deployed with [rsync](//rsync.samba.org) via [travis](//travis-ci.org).
-
+- content in [markdown](//daringfireball.net/projects/markdown), built with [jekyll](//jekyllrb.com).
 
 ## install locally
 
