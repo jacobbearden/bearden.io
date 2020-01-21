@@ -49,6 +49,5 @@ exclude: [
   readme.md,
   Gemfile,
   Gemfile.lock,
-  vendor,
-  id_rsa.enc
+  vendor
 ]
