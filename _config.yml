@@ -38,6 +38,12 @@ kramdown:
 assets:
   source_maps: false
   compression: true
+  defaults:
+    js: { integrity: true }
+    css: { integrity: true }
+    img: { integrity: true }
+  caching:
+    enabled: false
   sources:
     - _assets/css
     - _assets/js
