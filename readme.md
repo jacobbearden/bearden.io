@@ -1,4 +1,4 @@
-# [bearden.io](http://bearden.io) [![Build Status](https://travis-ci.org/jacobbearden/bearden.io.svg?branch=master)](https://travis-ci.org/jacobbearden/bearden.io)
+# [bearden.io](http://bearden.io)
 
 > my little corner of the internet.
 
