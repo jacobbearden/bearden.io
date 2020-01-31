@@ -3,14 +3,19 @@ layout: none
 title: Resume
 ---
 
-{% asset favicon %}
-<title>{{ page.title }} – {{ site.title }}</title>
+<html lang="en">
+  <head>
+    {% asset favicon %}
+    <title>{{ page.title }} &ndash; {{ site.title }}</title>
 
-<style>
-  body { margin: 0; }
-</style>
-
-<object data="/files/resume.pdf" type="application/pdf" width="100%" height="100%">
-  <p>failed to load viewer</p>
-  <p><a href="/files/resume.pdf">direct link</a></p>
-</object>
+    <style>
+      body { margin: 0; }
+    </style>
+  </head>
+  <body>
+    <object data="/files/resume.pdf" type="application/pdf" width="100%" height="100%">
+      <p>failed to load viewer</p>
+      <p><a href="/files/resume.pdf">direct link</a></p>
+    </object>
+  </body>
+</html>
