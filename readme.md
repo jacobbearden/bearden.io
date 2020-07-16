@@ -1,6 +1,6 @@
 # [bearden.io](http://bearden.io)
 
-> my little corner of the internet.
+> My little corner of the internet.
 
 
 ## about
