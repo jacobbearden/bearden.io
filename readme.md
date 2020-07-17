@@ -3,11 +3,11 @@
 > My little corner of the internet.
 
 
-## about
+## About
 
-- content in [markdown](//daringfireball.net/projects/markdown), built with [jekyll](//jekyllrb.com).
+- Content in [Markdown](//daringfireball.net/projects/markdown), built with [Jekyll](//jekyllrb.com).
 
-## install locally
+## Install Locally
 
 ```bash
 git clone git@github.com:jacobbearden/bearden.io.git
