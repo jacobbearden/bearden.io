@@ -1,0 +1,45 @@
+name: main
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+env:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: install
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.6'
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: build
+        run: |
+          bundle exec jekyll build
+
+      - name: test
+        run: |
+          bundle exec htmlproofer _dist --check-html --only-4xx --check-favicon
+
+      - name: deploy
+        uses: feeloor/azure-static-website-deploy@master
+        env:
+          SOURCE_DIR: _dist
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SECRET: ${{ secrets.AZURE_SECRET }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+          AZURE_INDEX_DOCUMENT_NAME: index.html
+          AZURE_ERROR_DOCUMENT_NAME: 404.html
