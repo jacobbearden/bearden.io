@@ -4,7 +4,9 @@ description: Writings and Ramblings
 in-nav: true
 ---
 
-{% assign postsByYear = site.posts | where:'hidden','false' | group_by_exp:'post', 'post.date | date: "%Y"' %}
+{% assign filteredPosts = site.posts | where_exp: 'post', 'post.hidden != true' %}
+{% assign postsByYear = filteredPosts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+
 {% for year in postsByYear %}
   <h3>{{ year.name }}</h3>
   <ul>
