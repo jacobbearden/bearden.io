@@ -6,9 +6,6 @@ on:
       - master
   workflow_dispatch:
 
-env:
-  NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
