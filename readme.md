@@ -1,4 +1,4 @@
-# [bearden.io](http://bearden.io)
+# [bearden.io](http://bearden.io) ![workflow](https://github.com/jacobbearden/bearden.io/workflows/workflow/badge.svg)
 
 > My little corner of the internet.
 
