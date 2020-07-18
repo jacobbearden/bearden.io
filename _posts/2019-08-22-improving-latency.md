@@ -1,5 +1,6 @@
 ---
 title: Improving Latency in Online Games
+hidden: true
 ---
 
 This is a short tutorial on how to improve latency in online video games, and anything that uses TCP packets. This tutorial is pulled from the forums of a game I used to play as a means of preserving it.
