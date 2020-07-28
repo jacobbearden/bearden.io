@@ -5,6 +5,8 @@ on:
     branches:
       - master
   workflow_dispatch:
+  #schedule:
+  #  - cron: '0 * * * *'
 
 jobs:
   main:
@@ -23,6 +25,30 @@ jobs:
         run: |
           gem install bundler
           bundle install
+
+      - name: Update Projects
+        uses: octokit/graphql-action@v2
+        id: graphql-query
+        with:
+          query: |
+            user(login: $owner:String!) {
+              pinnedItems(first: 6, types: REPOSITORY) {
+                nodes {
+                  ... on Repository {
+                    name
+                    description
+                    url
+                  }
+                }
+              }
+            }
+          owner: ${{ github.event.repository.owner.name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
+        run: |
+          mkdir _data
+          echo 'info: ${{ steps.graphql-query.outputs.data }}'
+
 
       - name: Build
         run: |
