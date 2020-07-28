@@ -31,7 +31,7 @@ jobs:
         uses: octokit/graphql-action@v2.2.1
         with:
           query: |
-            query user(login: $owner:String!) {
+            query user(login: "jacobbearden") {
               pinnedItems(first: 6, types: REPOSITORY) {
                 nodes {
                   ... on Repository {
@@ -42,14 +42,13 @@ jobs:
                 }
               }
             }
-          owner: ${{ github.event.repository.owner.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
 
       - name: Update
         run: |
           mkdir _data
-          echo 'info: ${{ steps.query.outputs.data }}'
+          echo '${{ steps.query.outputs.data }}' > _data/pinned-repos.json
 
 
       - name: Build
