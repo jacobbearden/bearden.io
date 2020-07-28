@@ -28,7 +28,7 @@ jobs:
 
       - name: Query
         id: query
-        uses: octokit/graphql-action@v2
+        uses: octokit/graphql-action@v2.2.1
         with:
           query: |
             user(login: $owner:String!) {
