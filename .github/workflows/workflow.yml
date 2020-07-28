@@ -26,9 +26,9 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Update Projects
+      - name: Query
+        id: query
         uses: octokit/graphql-action@v2
-        id: graphql-query
         with:
           query: |
             user(login: $owner:String!) {
@@ -45,9 +45,11 @@ jobs:
           owner: ${{ github.event.repository.owner.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
+
+      - name: Update
         run: |
           mkdir _data
-          echo 'info: ${{ steps.graphql-query.outputs.data }}'
+          echo 'info: ${{ steps.query.outputs.data }}'
 
 
       - name: Build
