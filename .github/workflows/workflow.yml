@@ -26,29 +26,29 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Query
-        id: query
-        uses: octokit/graphql-action@v2.2.1
-        with:
-          query: |
-            query user(login: "jacobbearden") {
-              pinnedItems(first: 6, types: REPOSITORY) {
-                nodes {
-                  ... on Repository {
-                    name
-                    description
-                    url
-                  }
-                }
-              }
-            }
-        env:
-          GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
+      #- name: Query
+      #  id: query
+      #  uses: octokit/graphql-action@v2.2.9
+      #  with:
+      #    query: |
+      #      query user(login: "jacobbearden") {
+      #        pinnedItems(first: 6, types: REPOSITORY) {
+      #          nodes {
+      #            ... on Repository {
+      #              name
+      #              description
+      #              url
+      #            }
+      #          }
+      #        }
+      #      }
+      #  env:
+      #    GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
 
-      - name: Update
-        run: |
-          mkdir _data
-          echo '${{ steps.query.outputs.data }}' > _data/pinned-repos.json
+      #- name: Update
+      #  run: |
+      #    mkdir _data
+      #    echo '${{ steps.query.outputs.data }}' > _data/pinned-repos.json
 
 
       - name: Build
