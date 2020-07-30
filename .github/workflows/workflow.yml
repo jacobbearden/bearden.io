@@ -31,20 +31,19 @@ jobs:
         uses: octokit/graphql-action@v2.2.9
         with:
           query: |
-            query release($owner:String!,$repo:String!) {
-              repository(owner:$owner,name:$repo) {
-                releases(first:1) {
+            query {
+              user(login: "jacobbearden") {
+                pinnedItems(first: 6, types: REPOSITORY) {
                   nodes {
-                    name
-                    createdAt
-                    tagName
-                    description
+                    ... on Repository {
+                      name
+                      description
+                      url
+                    }
                   }
                 }
               }
             }
-          owner: ${{ github.event.repository.owner.name }}
-          repo: ${{ github.event.repository.name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
 
