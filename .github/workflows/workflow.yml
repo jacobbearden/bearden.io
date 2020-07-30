@@ -50,7 +50,7 @@ jobs:
       - name: Update
         run: |
           mkdir _data
-          echo $"${{ steps.query.outputs.data }}" > _data/pinned-repos.json
+          echo $'${{ steps.query.outputs.data }}' > _data/pinned-repos.json
 
 
       - name: Build
