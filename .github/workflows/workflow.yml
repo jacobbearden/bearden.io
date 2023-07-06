@@ -45,3 +45,4 @@ jobs:
           AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
           AZURE_INDEX_DOCUMENT_NAME: index.html
           AZURE_ERROR_DOCUMENT_NAME: 404.html
+          FORCE_OVERWRITE: true
