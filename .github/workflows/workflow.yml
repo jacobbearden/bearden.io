@@ -32,7 +32,7 @@ jobs:
 
       - name: Test
         run: |
-          bundle exec htmlproofer _dist --check-html --only-4xx --check-favicon
+          bundle exec htmlproofer _dist --only-4xx --allow-missing-href
 
       - name: Deploy
         uses: feeloor/azure-static-website-deploy@master

@@ -68,4 +68,4 @@ Delete all `DWORD` registry keys called `TcpAckFrequency` and `TCPNoDelay` in th
 #### After
 *Computer*: "I have this packet I want to send to the server, so I'll send it."
 
-In computer science terms, you are disabling [Nagle's algorithm](//en.wikipedia.org/wiki/Nagle's_algorithm).
+In computer science terms, you are disabling [Nagle's algorithm](https://en.wikipedia.org/wiki/Nagle's_algorithm).
