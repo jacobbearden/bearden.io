@@ -1,3 +1,17 @@
 <span class="link" id="back-to-top" title="Back to top">[ &#8593; ]</span>
 
-{% asset back-to-top.js %}
+<script type="text/javascript">
+  const element = document.getElementById('back-to-top');
+
+  window.onscroll = () => {
+    if (window.pageYOffset > 190) {
+      element.style.display = 'block';
+      return;
+    }
+    element.style.display = 'none';
+  };
+
+  element.onclick = () => {
+    window.scrollTo(0, 0);
+  };
+</script>

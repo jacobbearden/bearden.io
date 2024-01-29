@@ -10,7 +10,6 @@ destination: _dist
 
 ### plugins
 plugins:
-  - jekyll-assets
   - jekyll-feed
   - jekyll-sitemap
 
@@ -35,20 +34,8 @@ kramdown:
   syntax_highlighter: rouge
 
 ### assets
-assets:
-  source_maps: false
-  compression: true
-  defaults:
-    js: { integrity: true }
-    css: { integrity: true }
-    img: { integrity: true }
-  caching:
-    enabled: false
-  sources:
-    - _assets/css
-    - _assets/js
-    - _assets/font
-    - _assets/img
+sass:
+  style: compressed
 
 ### exclude files
 exclude: [

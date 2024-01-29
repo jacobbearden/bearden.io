@@ -1,3 +1,6 @@
+---
+---
+
 @charset 'utf-8';
 
 @import 'lib/modern-normalize.min';
@@ -114,7 +117,7 @@ small {
   border-radius: .2rem;
 }
 
-/*a:not([href*='bearden.io']):not([href^='#']):not([href^='/']):after {
+a[target="_blank"]:after {
   content: '\2197';
   display: inline-block;
   vertical-align: middle;
@@ -122,10 +125,10 @@ small {
   width: 0.6em;
   height: 0.5em;
   font-size: 0.8em;
-  line-height: 2px;
+  line-height: 0px;
   border: 1px solid #0074d9;
   border-radius: 2px;
-}*/
+}
 
 hr {
   border: none;
@@ -272,4 +275,4 @@ blockquote {
   @import 'lib/syntax-native';
 }
 
-@import '../font/inter/inter-min';
+@import 'lib/inter-min';

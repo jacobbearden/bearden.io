@@ -7,4 +7,6 @@ in-nav: true
 
 A developer based in Boise, Idaho.
 
-Building for web, front-end and full-stack.
+[Resume](/resume/){:target="_blank"}
+
+[GitHub](https://github.com/jacobbearden){:target="_blank"}
