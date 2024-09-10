@@ -178,3 +178,5 @@ Reprehenderit non eu quis in ad elit esse qui aute id [incididunt](#inline) dolo
 <p class="text-silver">Silver text</p>
 <p class="text-gray">Gray text</p>
 <p class="text-black">Black text</p>
+
+{% include contact-form.html %}
