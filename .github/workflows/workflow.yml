@@ -1,0 +1,48 @@
+name: workflow
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+  #schedule:
+  #  - cron: '0 * * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+
+      - name: Install
+        run: |
+          gem install bundler
+          bundle install
+
+      - name: Build
+        run: |
+          bundle exec jekyll build
+
+      - name: Test
+        run: |
+          bundle exec htmlproofer _dist --only-4xx --allow-missing-href
+
+      - name: Deploy
+        uses: feeloor/azure-static-website-deploy@master
+        env:
+          SOURCE_DIR: _dist
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_SECRET: ${{ secrets.AZURE_SECRET }}
+          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          AZURE_STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+          AZURE_INDEX_DOCUMENT_NAME: index.html
+          AZURE_ERROR_DOCUMENT_NAME: 404.html
+          FORCE_OVERWRITE: true

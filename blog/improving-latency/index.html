@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+  <title>Improving Latency in Online Games – Jacob Bearden</title>
+  <meta name="description" content="Software Developer">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+  <nav>
+    <h1>
+      
+        Improving Latency in Online Games
+      
+
+      <small>
+        
+          August 22, 2019
+        
+      </small>
+    </h1>
+
+    
+    
+      
+        <a  href="/">Home</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <a  class="active"  href="/blog/">Blog</a>
+      
+    
+      
+        <a  href="/contact/">Contact</a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </nav>
+
+
+<article>
+  <p>This is a short tutorial on how to improve latency in online video games, and anything that uses TCP packets. This tutorial is pulled from the forums of a game I used to play as a means of preserving it.</p>
+
+<h2 id="requirements">Requirements</h2>
+<ol>
+  <li>Windows XP or higher (does not work on macOS/Linux, this is accomplished by changing Window’s settings)</li>
+  <li>Relatively modern CPU (made within this decade)</li>
+  <li>Internet that isn’t dial up speeds (this speeds up the rate at which your computer sends packets)</li>
+</ol>
+
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="install">Install</h3>
+<ol>
+  <li>Open up Run (Windows Key + R) then type “regedit” (without quotes) and hit Enter</li>
+  <li>Navigate to “HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces”</li>
+  <li>Repeat the below steps for each folder within the “Interaces” folder
+    <ul>
+      <li>Create two <code class="language-plaintext highlighter-rouge">DWORD</code> registry keys called <code class="language-plaintext highlighter-rouge">TcpAckFrequency</code> and <code class="language-plaintext highlighter-rouge">TCPNoDelay</code>
+        <ul>
+          <li>The names are case-sensitive, so make sure they’re the exact same as above</li>
+        </ul>
+      </li>
+      <li>Double-click on each of the new registry keys and change the value from <code class="language-plaintext highlighter-rouge">0</code> to <code class="language-plaintext highlighter-rouge">1</code>
+        <ul>
+          <li>Ensure you are using base hexadecimal</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Confirm that you have created and set these keys for all folders within the “Interfaces” folder</li>
+  <li>Restart your computer</li>
+</ol>
+
+<h3 id="uninstall">Uninstall</h3>
+<p>Delete all <code class="language-plaintext highlighter-rouge">DWORD</code> registry keys called <code class="language-plaintext highlighter-rouge">TcpAckFrequency</code> and <code class="language-plaintext highlighter-rouge">TCPNoDelay</code> in the “Interfaces” folder in the registry.</p>
+
+<h2 id="explanation">Explanation</h2>
+
+<h3 id="tcpackfrequency"><code class="language-plaintext highlighter-rouge">TcpAckFrequency</code></h3>
+<h4 id="before">Before</h4>
+<p><em>Server</em>: “Ok computer, I just sent a data packet over to you, got it?”</p>
+
+<p><em>Computer</em>: …</p>
+
+<p><em>Server</em>: “Come on, answer me! I don’t have all day! Stop wasting time!”</p>
+
+<p><em>Computer</em>: …</p>
+
+<p><em>Server</em>: “Ok, forget it, I’ve waited long enough, sending another one over! Got it?”</p>
+
+<p><em>Computer</em>: “Yep, got that one, also got the one you sent before, thanks.”</p>
+
+<p><em>Server</em>: “Well, why didn’t you acknowledge the first one when I sent it? I was waiting ages!”</p>
+
+<p><em>Computer</em>: “Sorry, I’m just trying to make the network more efficient by bundling the acknowledgements together in pairs. This is how I’m setup by default.”</p>
+
+<h4 id="after">After</h4>
+<p><em>Server</em>: “Ok computer, I just sent a data packet over, got it?”</p>
+
+<p><em>Computer</em>: “Yep, send the next!”</p>
+
+<p><em>Server</em>: “Ok, here’s another, got that?”</p>
+
+<p><em>Computer</em>: “Yep, send the next!”</p>
+
+<h3 id="tcpnodelay"><code class="language-plaintext highlighter-rouge">TCPNoDelay</code></h3>
+<h4 id="before-1">Before</h4>
+<p><em>Computer</em>: “I have this packet I want to send to the server, but it’s really small and I’m going to have another packet here in a few milliseconds, so I’ll wait and just lump them together.”</p>
+
+<h4 id="after-1">After</h4>
+<p><em>Computer</em>: “I have this packet I want to send to the server, so I’ll send it.”</p>
+
+<p>In computer science terms, you are disabling <a href="https://en.wikipedia.org/wiki/Nagle's_algorithm">Nagle’s algorithm</a>.</p>
+
+</article>
+
+    <footer>
+      <p>
+        <span>pgp: <a href="https://keybase.io/jacobbearden/key.asc"><code>0x027E9375E3D017CB</code></a></span>
+        <span>&copy; Jacob Bearden</span>
+      </p>
+
+      <span class="link" id="back-to-top" title="Back to top">[ &#8593; ]</span>
+
+<script type="text/javascript">
+  const element = document.getElementById('back-to-top');
+
+  window.onscroll = () => {
+    if (window.pageYOffset > 190) {
+      element.style.display = 'block';
+      return;
+    }
+    element.style.display = 'none';
+  };
+
+  element.onclick = () => {
+    window.scrollTo(0, 0);
+  };
+</script>
+
+    </footer>
+  </body>
+</html>
+

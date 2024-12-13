@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://bearden.io/blog/hello-world/</loc>
+<lastmod>2018-02-27T00:00:00-07:00</lastmod>
+</url>
+<url>
+<loc>https://bearden.io/blog/improving-latency/</loc>
+<lastmod>2019-08-22T00:00:00-06:00</lastmod>
+</url>
+<url>
+<loc>https://bearden.io/archive/</loc>
+</url>
+<url>
+<loc>https://bearden.io/blog/</loc>
+</url>
+<url>
+<loc>https://bearden.io/contact/</loc>
+</url>
+<url>
+<loc>https://bearden.io/</loc>
+</url>
+<url>
+<loc>https://bearden.io/projects/</loc>
+</url>
+<url>
+<loc>https://bearden.io/resume/</loc>
+</url>
+<url>
+<loc>https://bearden.io/files/resume.pdf</loc>
+<lastmod>2024-12-12T22:14:47-07:00</lastmod>
+</url>
+</urlset>
