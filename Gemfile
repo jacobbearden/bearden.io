@@ -9,5 +9,3 @@ gem 'html-proofer'
 
 gem 'uglifier'
 gem 'mini_magick'
-
-gem "webrick", "~> 1.8"
